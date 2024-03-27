@@ -1,5 +1,8 @@
 #   ∀  ,∃
-
+# Name : Aiman Motea
+#Id 20210783
+# Name: Ahmed Mohammed 
+# Id 20210791
 def eliminate_implication(formula):
     while "→" in formula:
         index = formula.find("→")
@@ -173,7 +176,7 @@ def convert_to_CNF(formula):
     return cnf
 
 # Example usage:
-formula = "(∀x (p(x)→ q(x))) ∧ (∀x ∀y (p(x) ∨ r(y)))"
+formula = "∀x (p(x)→ q(x))) ∧ ∃y q ∨ r(y)"
 cnf = convert_to_CNF(formula)
 print("CNF Form:", cnf)
 
